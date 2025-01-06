@@ -1,1 +1,1 @@
-web: gunicorn TheAxonJournal.wsgi
+web: gunicorn theaxonjournal.wsgi
