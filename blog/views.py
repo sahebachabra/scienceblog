@@ -1,8 +1,17 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView
+from django.views.generic import ListView, DetailView
+from .models import Post
 
-class HomePage(TemplateView):
+
+class HomeView(ListView):
+    
     """
-    Displays home page"
+    Displays home page
     """
-    template_name = 'index.html'
+    model = Post
+    template_name = 'home.html'
+ 
+
+class ArticleDetailView(DetailView):
+    model = Post
+    template_name = 'article_details.html'

@@ -14,21 +14,18 @@ from pathlib import Path
 import os
 import dj_database_url
 
-DATABASES = {
-    'default': dj_database_url.parse('postgresql://neondb_owner:4FDCUp1QdzfJ@ep-shiny-river-a2ubzrng.eu-central-1.aws.neon.tech/most_angle_boil_311604')
-}
-
 if os.path.isfile("env.py"):
-    import env
+   import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 # Quick-start development settings - unsuitable for production
-SECRET_KEY = 'SpecialCrystal222'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 ALLOWED_HOSTS = ['.gitpod.io','.herokuapp.com']
+CSRF_TRUSTED_ORIGINS = ['https://*.codeinstitute-ide.net', 'https://*.herokuapp.com', 'https://8000-sahebachabr-scienceblog-pmnwqjcz7kx.ws-eu117.gitpod.io',]
 
 # Application definition
 INSTALLED_APPS = [
@@ -76,13 +73,10 @@ WSGI_APPLICATION = 'theaxonjournal.wsgi.application'
 
 # Database configuration
 
-DATABASE_URL = os.environ.get("DATABASE_URL")
-if DATABASE_URL:
-    DATABASES = {
-        'default': dj_database_url.parse(DATABASE_URL)
-    }
-else:
-    raise ValueError("DATABASE_URL environment variable not set.")
+DATABASES = {
+   'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+}
+
 
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [

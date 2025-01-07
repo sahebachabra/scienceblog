@@ -10,7 +10,15 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}" >
 </head>
 <body>
-    <h1>Hello Django From Heroku</h1>
+    <ul>
+    <h1>Post</h1>
+    {% csrf_token %}
+    {% for post in object_list %}
+        <li><a href ="{% url 'article-detail' post.pk %}"> {{ post.title }} - {{ post.author.first_name }} {{ post.author.last_name }} </a>
+            </li>
+
+    {% endfor%}
+    </ul>
     
 </body>
 </html>
