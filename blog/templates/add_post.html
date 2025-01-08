@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% block title %}Create A New Blog Post{% endblock %}
 {% block content %}
 {% load static %}
 
@@ -12,18 +13,16 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}" >
 </head>
 <body>
-    
-    
-    
-    <ul>
-    <h1>The Axon Journal</h1>
-    {% csrf_token %}
-    {% for post in object_list %}
-        <li><a href ="{% url 'article-detail' post.pk %}"> {{ post.title }} </a> {{ post.author.first_name }} {{ post.author.last_name }} 
-            </li>
+    <h1> Add Post</h1>
+    <br/><br/>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn btn-info" >Post</button>
 
-    {% endfor%}
-    </ul>
+
+    </form>
+
    
     
 </body>
