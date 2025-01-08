@@ -14,13 +14,16 @@
                     <img src="{% static 'gut.jpg' %}" class="card-img-top" alt="Post Image"> <!-- Optional image for the post -->
                     <div class="card-body">
                         <h5 class="card-title">{{ post.title }}</h5>
-                        <p class="card-text">{{ post.summary|truncatewords:20 }}</p> <!-- Truncate content for preview -->
+                        <p class="card-text"></small><br/>{{ post.body|slice:":200" }}</p> <!-- Truncate content for preview -->
                         <a href="{% url 'article-detail' post.pk %}" class="btn btn-primary">Read More</a>
                     </div>
                     <div class="card-footer text-muted">
                         {{ post.author.first_name }} {{ post.author.last_name }} | {{ post.published_date }}
+                        {% if user.is_authenticated %}
                         <a href ="{% url 'update_post' post.pk %}">Edit</a>
                         <a href ="{% url 'delete_post' post.pk %}">Delete</a>
+                        {% endif %}
+                        
                     </div>
                 </div>
             </div>
