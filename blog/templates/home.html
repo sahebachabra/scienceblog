@@ -1,31 +1,29 @@
 {% extends 'base.html' %}
 {% block content %}
 {% load static %}
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Django-Setup</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" >
-</head>
-<body>
-    
-    
-    
-    <ul>
+<div class="container mt-4">
     <h1>The Axon Journal</h1>
     {% csrf_token %}
-    {% for post in object_list %}
-        <li><a href ="{% url 'article-detail' post.pk %}"> {{ post.title }} </a> {{ post.author.first_name }} {{ post.author.last_name }} 
-            </li>
-
-    {% endfor%}
-    </ul>
-   
     
-</body>
-</html>
+    <!-- Bootstrap row to organize cards -->
+    <div class="row">
+        {% for post in object_list %}
+            <!-- Each card will take up 4 columns on large screens, and adjust on smaller screens -->
+            <div class="col-md-4 mb-4">  <!-- col-md-4 for large screens -->
+                <div class="card">
+                    <img src="{% static 'gut.jpg' %}" class="card-img-top" alt="Post Image"> <!-- Optional image for the post -->
+                    <div class="card-body">
+                        <h5 class="card-title">{{ post.title }}</h5>
+                        <p class="card-text">{{ post.summary|truncatewords:20 }}</p> <!-- Truncate content for preview -->
+                        <a href="{% url 'article-detail' post.pk %}" class="btn btn-primary">Read More</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        {{ post.author.first_name }} {{ post.author.last_name }} | {{ post.published_date }}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
 {% endblock %}
