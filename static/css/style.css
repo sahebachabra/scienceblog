@@ -18,4 +18,79 @@ color:#a29e9d ;  /* Tomato red color */
 cursor: pointer;
 }
 
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+}
 
+
+.dm-serif-text-regular {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .dm-serif-text-regular-italic {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  body {
+    font-family: "DM Serif Text", serif;
+    background-color: #ab88de; /* Purple background */
+}
+
+/* Optional: Customize headings if needed */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+}
+
+/* Customize italic text */
+em, i {
+    font-family: "DM Serif Text", serif;
+    font-style: italic;
+}
+
+/* General styles for the card container */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Default layout */
+    gap: 60px; /* Space between cards */
+    margin: 0 auto; /* Center the container */
+    padding: 16px; 
+    max-width: 1900px;
+}
+
+/* Adjust for larger screens */
+@media screen and (min-width: 768px) and (max-width: 1090px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;  /* 2 cards per row for iPads */
+        margin: 0 8px; /* Reduce outer margin */
+    }
+}
+
+/* Further adjustments for smaller screens */
+@media screen and (max-width: 767px) {
+    .card-container {
+        grid-template-columns: 1fr; /* Single card per row on smaller screens */
+        margin: 0 4px;
+
+    }
+}
+
+/* Card styles */
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
