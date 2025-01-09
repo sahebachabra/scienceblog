@@ -12,4 +12,17 @@
 
     <br/></br>
     <a href ="{% url 'home' %}" class="btn btn-info">Back</a>
+
+    <br/><br/>
+    <hr>
+    <form action="{% url 'like_post' post.pk %}" method="POST">
+        {% csrf_token %}
+        <button type="submit">
+            {% if user in post.likes.all %}
+                Unlike
+            {% else %}
+                Like
+            {% endif %}
+        </button>
+    </form>
     {% endblock %}

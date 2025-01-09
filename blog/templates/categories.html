@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<div class="container mt-4">
+    {% if category_posts %}
+        <h1>Posts in {{ cats }}</h1>
+        
+        {% for post in category_posts %}
+        <div class="col-md-4 mb-4">  <!-- col-md-4 for large screens -->
+            <div class="card">
+                <img src="{% static 'gut.jpg' %}" class="card-img-top" alt="Post Image"> <!-- Optional image for the post -->
+                <div class="card-body">
+                    <h5 class="card-title">{{ post.title }}</h5>
+                    <p class="card-text">{{ post.body|slice:":200" }}...</p> <!-- Truncate content for preview -->
+                    <a href="{% url 'article-detail' post.pk %}" class="btn btn-primary">Read More</a>
+                    <p class="btn btn-info mt-2">{{ post.category }}</p>
+                </div>
+                <div class="card-footer text-muted">
+                    {{ post.author.first_name }} {{ post.author.last_name }} | {{ post.published_date }}
+                    {% if user.is_authenticated %}
+                    <a href="{% url 'update_post' post.pk %}" class="btn btn-warning btn-sm">Edit</a>
+                    <a href="{% url 'delete_post' post.pk %}" class="btn btn-danger btn-sm">Delete</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    {% else %}
+        <h2>Sorry, there are no posts in this category.</h2>
+    {% endif %}
+</div>
+{% endblock %}
