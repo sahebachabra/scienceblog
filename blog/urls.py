@@ -9,8 +9,9 @@ urlpatterns = [
     path('article/edit/<int:pk>', views.UpdatePostView.as_view(), name='update_post'),
     path('article/<int:pk>/remove', views.DeletePostView.as_view(), name='delete_post'),
     path('category/<str:cats>/', views.CategoryView, name='category'),
-    path('like/<int:pk>/', views.LikeView, name='like_post'),  # Corrected to use 'views.'
-    path('register/', views.register, name='register'),  # Add this line for the register view
-    path('login/', auth_views.LoginView.as_view(), name='login'),
+    path('like/<int:pk>/', views.LikeView, name='like_post'),  
+    path('login/', auth_views.LoginView.as_view(template_name='members/login.html'), name='login'),
+    path('register/', views.register, name='register'),  
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
+    path('like/<int:pk>/', views.LikeView, name='like_post'),
 ]

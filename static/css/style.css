@@ -1,3 +1,21 @@
 body {
     background-color: #ab88de; 
 }
+
+.btn-heart {
+    font-size: 2rem;
+    background: none ;
+    border: none;  /* Tomato red color */
+    color: #FF6347;  /* Tomato red color */
+    cursor: pointer;
+  }
+
+.btn-heart-o {
+font-size: 2rem;
+background: none ;
+border: none ;  /* Tomato red color */
+color:#a29e9d ;  /* Tomato red color */
+cursor: pointer;
+}
+
+

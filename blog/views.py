@@ -8,6 +8,7 @@ from django.contrib import messages
 from django.shortcuts import render
 from django.contrib.auth import login
 from django.contrib.auth.models import User
+from django.contrib.auth.decorators import login_required
 
 
 def register(request):
@@ -19,8 +20,9 @@ def register(request):
             return redirect('login')
     else:
         form = UserCreationForm()
-    return render(request, 'register.html', {'form': form})
+    return render(request, 'members/register.html', {'form': form})
 
+@login_required
 def LikeView(request, pk):
     post = get_object_or_404(Post, pk=pk)
     
@@ -59,6 +61,7 @@ class AddPostView(CreateView):
     model = Post
     form_class = PostForm
     template_name = 'add_post.html'
+    success_url = reverse_lazy('home')
 
 
 class UpdatePostView(UpdateView):

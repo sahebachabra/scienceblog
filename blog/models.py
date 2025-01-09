@@ -22,12 +22,16 @@ class Post(models.Model):
     cover_image = CloudinaryField('cover_image', null=True, blank=True)
     category = models.CharField(max_length=255, default="uncategorised")
     likes = models.ManyToManyField(User, related_name='liked_posts', blank=True)
+    image = models.ImageField(upload_to='blog_images/', blank=True, null=True)
 
+
+    @property
     def total_likes(self):
         return self.likes.count()
     
     def __str__(self):
         return self.title + ' | ' + str(self.author)
+
     
 
     def get_absolute_url(self):

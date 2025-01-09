@@ -1,22 +1,37 @@
 {% extends 'base.html' %}
 {% block content %}
 {% load static %}
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
 <div class="container mt-4">
     <h1>The Axon Journal</h1>
     {% csrf_token %}
     
-    <!-- Bootstrap row to organize cards -->
+    
     <div class="row">
         {% for post in object_list %}
             <!-- Each card will take up 4 columns on large screens, and adjust on smaller screens -->
             <div class="col-md-4 mb-4">  <!-- col-md-4 for large screens -->
                 <div class="card">
-                    <img src="{% static 'gut.jpg' %}" class="card-img-top" alt="Post Image"> <!-- Optional image for the post -->
+                    <img src="{% if post.image %}{{ post.image.url }}{% else %}{% static 'default-image.jpg' %}{% endif %}" class="card-img-top" alt="No Image"> <!-- Optional image for the post -->
                     <div class="card-body">
                         <h5 class="card-title">{{ post.title }}</h5>
                         <p class="card-text"></small><br/>{{ post.body|slice:":200" }}</p> <!-- Truncate content for preview -->
                         <a href="{% url 'article-detail' post.pk %}" class="btn btn-primary">Read More</a>
                         <br/><br/>
+                        <form action="{% url 'like_post' post.pk %}" method="POST">
+                            {% csrf_token %}
+                            <button type="submit"class="btn btn-link">
+                                {% if user in post.likes.all %}
+                                <i class="fa fa-heart btn-heart"></i> <!-- Red heart when liked -->
+                            {% else %}
+                            <i class="fa fa-heart btn-heart-o"></i>
+                                {% endif %}
+                            </button>
+                        </form>
+                        <p>{{ post.total_likes }} likes</p>
+                        <br/>
                         <a href="{% url 'category' post.category %}" class="btn btn-info">{{post.category}}</a>
                     </div>
                     <div class="card-footer text-muted">
