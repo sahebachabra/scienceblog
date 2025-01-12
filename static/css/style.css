@@ -1,92 +1,58 @@
 body {
-    background-color: #ab88de; 
-}
-
-.btn-heart {
-    font-size: 2rem;
-    background: none ;
-    border: none;  /* Tomato red color */
-    color: #FF6347;  /* Tomato red color */
-    cursor: pointer;
-  }
-
-.btn-heart-o {
-font-size: 2rem;
-background: none ;
-border: none ;  /* Tomato red color */
-color:#a29e9d ;  /* Tomato red color */
-cursor: pointer;
-}
-
-.title-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, sans-serif;
-    font-size: 24px;
-}
-
-
-.dm-serif-text-regular {
-    font-family: "DM Serif Text", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .dm-serif-text-regular-italic {
-    font-family: "DM Serif Text", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  body {
     font-family: "DM Serif Text", serif;
     background-color: #ab88de; /* Purple background */
 }
 
-/* Optional: Customize headings if needed */
-h1, h2, h3, h4, h5, h6 {
-    font-family: "DM Serif Text", serif;
-    font-weight: 400;
+/* Buttons */
+.btn-heart, .btn-heart-o {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
-/* Customize italic text */
+.btn-heart {
+    color: #FF6347; /* Tomato red */
+}
+
+.btn-heart-o {
+    color: #a29e9d; /* Grayish color */
+}
+
+.btn-heart:focus, .btn-heart-o:focus {
+    outline: 2px solid #FF6347;
+    outline-offset: 2px;
+}
+
+/* Title */
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "DM Serif Text", serif;
+    font-size: 24px;
+    color: #000000;
+}
+
+/* Text Styles */
 em, i {
     font-family: "DM Serif Text", serif;
     font-style: italic;
+    color: #fff;
 }
 
-/* General styles for the card container */
+/* Cards */
 .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Default layout */
-    gap: 60px; /* Space between cards */
-    margin: 0 auto; /* Center the container */
-    padding: 16px; 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 60px;
+    margin: 0 auto;
+    padding: 16px;
     max-width: 1900px;
 }
 
-/* Adjust for larger screens */
-@media screen and (min-width: 768px) and (max-width: 1090px) {
-    .card-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;  /* 2 cards per row for iPads */
-        margin: 0 8px; /* Reduce outer margin */
-    }
-}
-
-/* Further adjustments for smaller screens */
-@media screen and (max-width: 767px) {
-    .card-container {
-        grid-template-columns: 1fr; /* Single card per row on smaller screens */
-        margin: 0 4px;
-
-    }
-}
-
-/* Card styles */
 .card {
-    background: #fff;
+    background: #b69fd9;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 2px;
@@ -94,3 +60,44 @@ em, i {
     flex-direction: column;
     justify-content: space-between;
 }
+
+.card:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+    transition: all 0.3s ease;
+}
+
+/* Responsive Grid */
+@media screen and (min-width: 768px) and (max-width: 1090px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .card-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 8px;
+    }
+}
+
+/* Navbar */
+.navbar-expand-lg .nav-link {
+    color: #ab88de !important;
+}
+
+
+
+.navbar-toggler-icon {
+display: inline-block;
+width: 1.5em;
+height: 1.5em;
+vertical-align: middle;
+background-image: var(--bs-navbar-toggler-icon-bg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 100%;
+color: #ab88de
+    }

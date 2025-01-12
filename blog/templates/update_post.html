@@ -9,7 +9,7 @@
     <br/><br/>
     <div class="mb-3">
         <br/><br/>
-        <form method="POST">
+        <form method="POST" enctype="multipart/form-data">
             {% csrf_token %}
             {{ form.as_p }}
             <button class="btn btn-info" >Post</button>
@@ -17,9 +17,9 @@
         </form>
     </div>
 {% else %}
-Please log in to edit/delete a post
+Please log in to update a post
 {% endif %}
 
-
-    
 {% endblock %}
+
+   
