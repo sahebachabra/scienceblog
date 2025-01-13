@@ -1,5 +1,5 @@
 # ReadMe
-
+{% load static %}
 To do
 
 
@@ -48,6 +48,7 @@ Wireframe
 
 # **Neuroscience Blog Website**
 
+<img src="{% static 'responsive.png' %}" alt="Responsive design mockup">
 
 ## **Overview**
 
