@@ -1,6 +1,6 @@
 body {
     font-family: "DM Serif Text", serif;
-    background-color: #ab88de; /* Purple background */
+    background-color: #ab88de; 
 }
 
 /* Buttons */
@@ -12,11 +12,11 @@ body {
 }
 
 .btn-heart {
-    color: #FF6347; /* Tomato red */
+    color: #FF6347; 
 }
 
 .btn-heart-o {
-    color: #a29e9d; /* Grayish color */
+    color: #a29e9d; 
 }
 
 .btn-heart:focus, .btn-heart-o:focus {

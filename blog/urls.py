@@ -1,10 +1,10 @@
 from django.urls import path
-from . import views  # Import the views module from the current directory
+from . import views 
 from django.contrib.auth import views as auth_views 
 from django.urls import path, include
 
 urlpatterns = [
-    path('', views.HomeView.as_view(), name='home'),  # Corrected to use 'views.'
+    path('', views.HomeView.as_view(), name='home'),  
     path('article/<int:pk>/', views.ArticleDetailView.as_view(), name='article-detail'), 
     path('add_post/', views.AddPostView.as_view(), name='add_post'),
     path('article/edit/<int:pk>', views.UpdatePostView.as_view(), name='update_post'),

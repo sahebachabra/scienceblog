@@ -22,7 +22,7 @@
     {% csrf_token %}
     <button type="submit" class="btn btn-link">
         {% if user in post.likes.all %}
-        <i class="fa fa-heart btn-heart"></i> <!-- Red heart when liked -->
+        <i class="fa fa-heart btn-heart"></i>
         {% else %}
         <i class="fa fa-heart btn-heart-o"></i>
         {% endif %}
@@ -31,15 +31,15 @@
 
 <p>{{ post.total_likes }} likes</p>
 
-<!-- Display body with line breaks -->
+
 <div>
     {{ post.body|linebreaksbr }}
-    <!-- This will convert line breaks into <br> -->
+    
 </div>
 <br />
 {% if post.image %}
 <img src="{{ post.image.url }}" alt="Post Image" style="max-width: 100%; height: auto;" "align:center">
-<!-- Display image -->
+
 {% endif %}
 <br /><br />
 <a href="{% url 'home' %}" class="btn btn-info">Back</a>
