@@ -264,7 +264,6 @@ The website is hosted on Heroku and deployed with a PostgreSQL database. Some ch
 
 * Some CSS commands conflicted, causing styling issues.
 * Accessibility adjustments, especially for mobile responsiveness, were more complex than expected.
-* 
 * Some accessibility adjustments were more complex than anticipated, especiallly adjusting image size to phones and tablets
 
 
@@ -280,9 +279,6 @@ All code was written by me
 
 ## **Future Improvements**
 
-
-
-* Implementing an interactive quiz or checklist feature for parents to assess their readiness for Halloween.
-* Add links to pdfs of fire safety and allergies
-* Adding a blog section for ongoing seasonal safety tips.
-* Further testing and optimization for older devices and browsers.
+* Add a comment features for users
+* Create a personal user profile for users to interact with each other
+* Have rerefence links for each article .
