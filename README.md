@@ -144,7 +144,7 @@ Custom Models
 * Used Github Project Board to track completion of user stories
 
 
-## **Code Quality + Python testing procedures**
+## **Code Quality + testing procedures**
 
 
 
@@ -157,6 +157,11 @@ Custom Models
 <img src="static/Screenshot 2025-01-13 at 13.40.15.png" alt="Responsive design mockup">
 <img src="static/Screenshot 2025-01-13 at 14.01.39.png" alt= Javascript testing>
 
+**Manual Testing:
+
+*Focus: Tested real-world scenarios, ensuring the website was intuitive and easy to use.
+*Approach: This included exploring the site from a user perspective—navigating pages, testing link behavior, and filling out forms. I also sought feedback from oher people from the  bootcamp to spot usability issues.
+*Insight: Manual testing revealed minor UI/UX refinements, like adjusting button sizes and ensuring content was legible across various screen sizes.
 
 
 ## **CRUD:**
