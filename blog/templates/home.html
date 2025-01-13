@@ -17,7 +17,7 @@
             <!-- Each card will take up 4 columns on large screens, and adjust on smaller screens -->
             <div class="col-md-4 mb-4">  <!-- col-md-4 for large screens -->
                 <div class="card">
-                    <img src="{% if post.image %}{{ post.image.url }}{% else %}{% static 'default-image.jpg' %}{% endif %}" class="card-img-top" alt="No Image"> <!-- Optional image for the post -->
+                    <img src="{% if post.cover_image %}{{ post.cover_image.url }}{% else %}{% static 'default-cover.jpg' %}{% endif %}" class="card-img-top" alt="Cover Image">
                     <div class="card-body">
                         <h5 class="card-title">{{ post.title }}</h5>
                         <p class="card-text"></small><br/>{{ post.body|slice:":200" }}</p> <!-- Truncate content for preview -->
