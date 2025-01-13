@@ -23,7 +23,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 # Quick-start development settings - unsuitable for production
 SECRET_KEY = os.environ.get('SECRET_KEY')
-DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS = ['.gitpod.io','.herokuapp.com']
 CSRF_TRUSTED_ORIGINS = ['https://*.codeinstitute-ide.net', 'https://*.herokuapp.com', 'https://8000-sahebachabr-scienceblog-pmnwqjcz7kx.ws-eu117.gitpod.io',]
 
