@@ -1,6 +1,7 @@
 from django.urls import path
 from . import views  # Import the views module from the current directory
 from django.contrib.auth import views as auth_views 
+from django.urls import path, include
 
 urlpatterns = [
     path('', views.HomeView.as_view(), name='home'),  # Corrected to use 'views.'
@@ -15,4 +16,7 @@ urlpatterns = [
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
     path('like/<int:pk>/', views.LikeView, name='like_post'),
     path('about/', views.AboutView.as_view(), name='about'),
+    path('members/', include('members.urls')), 
 ]
+
+    
