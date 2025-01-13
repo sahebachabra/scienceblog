@@ -13,6 +13,9 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 
 if os.path.isfile("env.py"):
    import env
@@ -107,5 +110,15 @@ LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 LOGIN_URL = 'login'
 
-# MEDIA_URL = '/media/'
+MEDIA_URL = 'https://res.cloudinary.com/dc2m4znsz/image/upload/'
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dc2m4znsz',
+    'API_KEY': '544646851356732',
+    'API_SECRET': 'v1JniLXji2ZtEXnZyIsVo9ciCdw'
+}
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
