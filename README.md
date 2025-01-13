@@ -154,7 +154,11 @@ Custom Models
 * Regular manual testing e.g. adding posts
 
 
-# 
+
+### **Testing Results**
+
+The website was tested across different devices and screen sizes using Chrome DevTools. It performed well on desktops, tablets, and mobile phones. Adjustments were made to improve layout responsiveness and prevent text from touching the screen edges on mobile devices.
+
 
 <img src="static/Screenshot 2025-01-13 at 13.40.15.png" alt="Responsive design mockup">
 <img src="static/Screenshot 2025-01-13 at 14.01.39.png" alt= Javascript testing>
@@ -166,12 +170,13 @@ Custom Models
 *Insight: Manual testing revealed minor UI/UX refinements, like adjusting button sizes and ensuring content was legible across various screen sizes.
 
 
- ##** Test Case 1:**
- *Test Case: Test if the navbar has a black background color across the entire page.	
+ ## **Test Case 1:**
+ * Test Case: Test if the navbar has a black background color across the entire page.	
  Expected outcome: The navbar should have a solid black background across the full width of the page.
  Pass
-##** Test Case 2:**
- *Test Case: Test if authenticated users can see the "Logout" link and unauthenticated users can see "Login."
+
+## **Test Case 2:**
+ * Test Case: Test if authenticated users can see the "Logout" link and unauthenticated users can see "Login."
  Expected outcome: Authenticated users should see "Logout," and unauthenticated users should see "Login" and "Register."
  Pass
  
@@ -240,12 +245,6 @@ I did not use GitHub Copilot
 * 
 
 
-## **Testing and Validation**
-
-
-### **Testing Results**
-
-The website was tested across different devices and screen sizes using Chrome DevTools. It performed well on desktops, tablets, and mobile phones. Adjustments were made to improve layout responsiveness and prevent text from touching the screen edges on mobile devices.
 
 
 ### **Validation**
