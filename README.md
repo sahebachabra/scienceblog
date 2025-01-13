@@ -190,7 +190,7 @@ Custom Models
 
 ## **AI Tools Usage**
 
-I used ChatGPT a few time to try and fix minor bugs and also I wanted to make some interesting spooky effects so I used to it help me make a .sectionimagehover in my css
+I used ChatGPT a few time to try and fix minor bugs and also I wanted to make some interesting effects using css so I used to it help me make a .sectionimagehover in my css
 
 
 ### **GitHub Copilot**
