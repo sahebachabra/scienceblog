@@ -6,6 +6,12 @@
 
 ## **Overview**
 
+Responsive design
+- Desktop: Options spread across navbar
+- Ipad and iphone: Options revealed in dropdown burger icon
+- Clear Navigation 
+- No loss of functionality
+
 
 ### **Purpose**
 
@@ -101,6 +107,70 @@ Acceptance Criteria:
 
 <img src="static/Screenshot 2025-01-13 at 13.12.27.png" alt="Responsive design mockup">
 
+### User Friendly:
+
+
+* Contrasting background to text
+* Easy to read font
+* Aesthetic colour palette
+
+<img src="static/Screenshot 2025-01-13 at 13.14.22.png" alt="Responsive design mockup">
+### 
+
+
+
+
+
+## Database:
+
+
+### Entity- relationship diagram:
+
+Custom Models
+
+
+
+* Neuroscience article- personalised to my blog by total likes
+* Category/ tag- each article can be separated in to different topics eg Computational neuroscience, Psychiatry etc. There is a page for each tag
+
+<img src="static/Screenshot 2025-01-13 at 13.30.04.png" alt="Responsive design mockup">
+
+
+
+### Agile Methodology:
+
+
+
+* Used Github Project Board to track completion of user stories
+
+
+## **Code Quality + Python testing procedures**
+
+
+
+* Passed the Python linter , adherence to PEP 8 Guidelines 
+* Regular manual testing e.g. adding posts
+
+
+# 
+
+<img src="static/Screenshot 2025-01-13 at 13.40.15.png" alt="Responsive design mockup">
+<img src="static/Screenshot 2025-01-13 at 14.01.39.png" alt= Javascript testing>
+
+
+
+## **CRUD:**
+
+
+
+* Can create and delete posts once logged in
+
+
+## **User notification:**
+
+
+
+* Users are notified when they are about to delete a post
 
 
 
