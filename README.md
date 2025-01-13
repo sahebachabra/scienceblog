@@ -107,6 +107,8 @@ Acceptance Criteria:
 
 <img src="static/Screenshot 2025-01-13 at 13.12.27.png" alt="Responsive design mockup">
 
+My wireframe resembles my MVP at the end of my project. At the beginning I thought my colour scheme would be purple and grey, however as this project evolved i changed it purple and black as  I felt it would look better for the user 
+
 ### User Friendly:
 
 
