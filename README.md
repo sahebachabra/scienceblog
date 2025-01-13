@@ -164,6 +164,16 @@ Custom Models
 *Focus: Tested real-world scenarios, ensuring the website was intuitive and easy to use.
 *Approach: This included exploring the site from a user perspective—navigating pages, testing link behavior, and filling out forms. I also sought feedback from oher people from the  bootcamp to spot usability issues.
 *Insight: Manual testing revealed minor UI/UX refinements, like adjusting button sizes and ensuring content was legible across various screen sizes.
+ ** Test Case 1:**
+ Test Case: Test if the navbar has a black background color across the entire page.	
+ Expected outcome: The navbar should have a solid black background across the full width of the page.
+ Pass
+** Test Case 2:**
+ Test Case: Test if authenticated users can see the "Logout" link and unauthenticated users can see "Login."
+ Expected outcome: Authenticated users should see "Logout," and unauthenticated users should see "Login" and "Register."
+ Pass
+ 
+
 
 
 ## **CRUD:**
