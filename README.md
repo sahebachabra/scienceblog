@@ -239,7 +239,7 @@ Minor errors were identified after deployment and issues with visuals on phones 
 
 ### **Deployment Process**
 
-The website is hosted on Heroku and deployed with a PostgreSQL database. Some challenges with image display on the site were resolved by fixing relative links in the HTML.
+The website is hosted on Heroku and deployed with a PostgreSQL database. Some challenges with image display on the site were resolved by fixing relative links in the HTML. I used the step by step instructions on the Deployment guidebook given by the code instititute. This included what packaged to install, what files to create etc. I intiallu found it difficult to deploy to heroku, later realising that I hadn't installed the correct config vars on heroku. 
 
 
 ## **Reflection on Development Process**
