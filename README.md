@@ -1,131 +1,270 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# ReadMe
 
-Welcome saheba chabra,
+To do
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
 
-## Gitpod Reminders
+- [ ] Like unlike function
+- [ ] Should do must do
+- [ ] Read me
+- [ ] Testing
+- [ ] You’ve added a post page
+- [ ] Front end stuff
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+ER Diagram
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
 
-A blue button should appear to click: _Make Public_,
+![alt_text](images/image1.png "image_tooltip")
 
-Another blue button should appear to click: _Open Browser_.
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+*  Pick tag or category 
+* @is_superuser
+* Peer review 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+Wireframe
 
-### Connecting your Mongo database
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
 
-------
+<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+![alt_text](images/image2.png "image_tooltip")
 
-**June 18, 2024,** Add Mongo back into template
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
 
-**May 28 2024:** Fix Mongo and Links installs
 
-**April 26 2024:** Update node version to 16
+<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-**September 20 2023:** Update Python version to 3.9.17.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![alt_text](images/image3.png "image_tooltip")
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+# **Neuroscience Blog Website**
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## **Overview**
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### **Purpose**
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+This project is a blog website aimed at individuals interested in neuroscience, including students, professors, and academics. The goal is to create an engaging platform for users to share, discuss, and learn about neuroscience through blog posts, likes, and other interactions. The site provides an opportunity for users to contribute their knowledge, engage with community discussions, and learn from peers in the field.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### **Target Audience**
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+The website is targeted at those who are curious about neuroscience, including high school students, university students and professors 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## **User Stories**
 
-------
 
-## FAQ about the uptime script
+### **Must-Have User Stories**
 
-**Why have you added this script?**
+As a registered user, \
+I want to create and publish blog posts related to neuroscience, \
+so that I can share my knowledge with the community.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+Acceptance Criteria:
 
-**How will this affect me?**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+* Logged-in users should see a "Create Post" button on their dashboard.
+* Users must provide a title, content, and select at least one category (e.g., Cognitive Neuroscience).
+* Users can optionally add tags and upload a featured image.
+* Posts are saved as drafts by default and require explicit action to publish.
+* Only published posts appear on the homepage.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+As a neuroscience enthusiast (student or academic), \
+I want to create an account on the blog, \
+so that I can contribute posts, comment, and engage with other users.
 
-**So….?**
+Acceptance Criteria:
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
 
-**Can I opt out?**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+* Users can navigate to the registration page from the homepage.
+* Users must provide a username, email, and password.
+* Passwords must meet security requirements (e.g., minimum 8 characters, at least one number).
+* The system should send a confirmation email after registration.
+* Users should be redirected to the homepage upon successful registration.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+As a logged-in user, \
+I want to be able to like and unlike on blog posts, \
+so that I can engage with the author and other readers.
 
-**Anything more?**
+Acceptance Criteria:
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
----
 
-Happy coding!
+* A like count should appear below each post for logged-in users.
+* They should be able to like the post, increasing the like count
+
+
+### **Should-Have User Stories**
+
+As a neuroscience student, \
+I want to filter posts by specific categories or tags, \
+so that I can find relevant content more easily.
+
+Acceptance Criteria:
+
+
+
+* Categories should appear as a dropdown menu in the navigation bar.
+* Tags should be displayed as clickable links on each post.
+* Clicking a category or tag should filter posts to only display relevant ones.
+* Pagination should work correctly when filtering by category or tag.
+
+
+### **Could-Have User Stories**
+
+As a neuroscience academic, \
+I want to view profiles of other contributors, \
+so that I can learn about their expertise and interests.
+
+Acceptance Criteria:
+
+
+
+* Clicking a user’s name on a post or comment redirects to their profile page.
+* Profiles should display the user’s username, bio, and list of posts they’ve authored.
+* Users can optionally share their academic affiliation and research interests.
+* Profiles should not display sensitive data (e.g., email addresses).
+
+
+## **Design Decisions**
+
+
+### **Wireframes**
+
+
+
+<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image4.png "image_tooltip")
+
+
+
+
+<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image5.png "image_tooltip")
+
+
+
+### **Accessibility Considerations **
+
+
+
+* High contrast between text and background for readability.
+* Alt text for images to ensure accessibility for visually impaired users.
+* Resizable text to maintain legibility on mobile devices and smaller screens.
+
+
+## **AI Tools Usage**
+
+I used ChatGPT a few time to try and fix minor bugs and also I wanted to make some interesting spooky effects so I used to it help me make a .sectionimagehover in my css
+
+
+### **GitHub Copilot**
+
+I did not use GitHub Copilot
+
+
+## **Features Implementation**
+
+
+### **Core Features (Must-Haves)**
+
+
+
+* **Post Creation**: Users can create, edit, and publish blog posts on neuroscience topics..
+* **Like System**: Users can like posts to express appreciation.
+
+
+### **Advanced Features (Should-Haves)**
+
+
+
+* **Categories and Tags**: Posts can be filtered by categories or tags for easier navigation.
+* **User Profiles**: Users can view others' profiles, including their posts and academic affiliations.
+
+
+### **Optional Features (Could-Haves)**
+
+
+
+* **Post Filtering by Author**: Users can filter posts by author to explore content by specific contributors.
+* **Follow System**: Users can follow other users to receive updates on their posts and activities.
+* 
+
+
+## **Testing and Validation**
+
+
+### **Testing Results**
+
+The website was tested across different devices and screen sizes using Chrome DevTools. It performed well on desktops, tablets, and mobile phones. Adjustments were made to improve layout responsiveness and prevent text from touching the screen edges on mobile devices.
+
+
+### **Validation**
+
+Minor errors were identified after deployment and issues with visuals on phones were identified using google extension.
+
+
+## **Deployment**
+
+
+### **Deployment Process**
+
+The website is hosted on Heroku and deployed with a PostgreSQL database. Some challenges with image display on the site were resolved by fixing relative links in the HTML.
+
+
+## **Reflection on Development Process**
+
+
+### **Successes**
+
+
+
+* Effective use of Code Institute staff and AI tools, significantly streamlined the development process (but not using it too much)
+* The final design achieved the right balance between being fun and informative
+
+
+### **Challenges**
+
+
+
+* Some CSS commands conflicted, causing styling issues.
+* Accessibility adjustments, especially for mobile responsiveness, were more complex than expected.
+* 
+* Some accessibility adjustments were more complex than anticipated, especiallly adjusting image size to phones and tablets
+
+
+### **Final Thoughts**
+
+This project provided valuable insights into creating an engaging blog website, balancing design with functionality, and ensuring accessibility. The experience has honed my ability to build user-centric platforms while maintaining academic professionalism.
+
+
+## **Code Attribution**
+
+All code was written by me
+
+
+## **Future Improvements**
+
+
+
+* Implementing an interactive quiz or checklist feature for parents to assess their readiness for Halloween.
+* Add links to pdfs of fire safety and allergies
+* Adding a blog section for ongoing seasonal safety tips.
+* Further testing and optimization for older devices and browsers.
